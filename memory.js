@@ -1,8 +1,12 @@
-var carte = {
-    type: "boule",
-    decrire: function () {
-        let description = this.type;
-        return description;
-    }
+function Carte (type) {
+    this.type = type;
+    this.getType = function () {
+        alert(type);
+    };
 }
-console.log(carte.decrire());
+function myFunction() {
+    alert("Hello World!");
+}
+let zob = new Carte('zob')
+document.getElementById("myBtn").addEventListener("click", zob.getType);
+
