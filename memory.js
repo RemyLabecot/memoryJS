@@ -4,9 +4,6 @@ function Carte (type) {
         alert(type);
     };
 }
-function myFunction() {
-    alert("Hello World!");
-}
 let zob = new Carte('zob')
 document.getElementById("myBtn").addEventListener("click", zob.getType);
 
